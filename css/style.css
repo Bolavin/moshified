@@ -798,8 +798,37 @@ a {
 /* Plans Block */
 .block-plans .grid {
 	gap: 8rem 4rem;
+	margin-block: 12rem;
 }
 
 .block-plans {
 	max-width: 500px;
+}
+
+
+/* Features */
+.feature {
+	align-items: center;
+	/* justify-items: center; */
+	gap: 4rem 2rem;
+	margin-block: 12rem;
+}
+
+.feature:first-of-type {
+	margin-top: 6rem;
+}
+
+.feature__heading {
+	margin-block: 1rem;
+}
+
+.feature__image {
+	width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+	.feature:nth-of-type(even) .feature__content {
+		order: 2;
+	}
+
 }
